@@ -1,5 +1,5 @@
 const express = require("express");
-const route = require("./src/Route/blogRoute");
+const route = require("./Route/blogRoute");
 const cors = require("cors");
 const app = express();
 const bodyparser = require("body-parser");
@@ -28,7 +28,7 @@ const filter = (req, file, cb) => {
   }
 };
 
-require("dotenv").config();
+
 const PORT = 5000;
 const db =
   "mongodb+srv://zero:12qwerty@test.cttxssn.mongodb.net/blog?retryWrites=true&w=majority&ssl=true";
